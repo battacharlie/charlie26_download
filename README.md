@@ -4,7 +4,7 @@ Qui si scarica l'ultima versione di **CHARLIE26**, l'intercom di produzione per 
 
 | Per | File |
 | --- | --- |
-| Windows 10 e 11 (64 bit) | [charlie26-windows-amd64.exe](https://github.com/battacharlie/charlie26_download/releases/latest/download/charlie26-windows-amd64.exe) |
+| Windows 10 e 11 (64 bit), installer con la libreria NDI® | [charlie26-setup.exe](https://github.com/battacharlie/charlie26_download/releases/latest/download/charlie26-setup.exe) |
 | Mac con chip Apple (M1, M2, M3…) | [charlie26-darwin-arm64](https://github.com/battacharlie/charlie26_download/releases/latest/download/charlie26-darwin-arm64) |
 | Mac con processore Intel | [charlie26-darwin-amd64](https://github.com/battacharlie/charlie26_download/releases/latest/download/charlie26-darwin-amd64) |
 | Android (app per tecnici e regia da smartphone) | [charlie26-android.apk](https://github.com/battacharlie/charlie26_download/releases/latest/download/charlie26-android.apk) |
@@ -14,7 +14,7 @@ Le novità di ogni versione sono nella [release](https://github.com/battacharlie
 
 ## Come si avvia
 
-**Windows**: doppio clic. Se compare "Windows ha protetto il PC": *Ulteriori informazioni → Esegui comunque*. Al primo avvio consenti l'accesso alle **Reti private**. Il programma resta come icona vicino all'orologio.
+**Windows**: doppio clic sull'installer e segui la procedura (serve l'amministratore: aggiunge anche la regola del firewall). Si disinstalla da *App installate*. Se compare "Windows ha protetto il PC": *Ulteriori informazioni → Esegui comunque*. Al primo avvio consenti l'accesso alle **Reti private**. Il programma resta come icona vicino all'orologio.
 
 **Mac** (file non firmati da Apple), nel Terminale:
 ```
@@ -27,7 +27,7 @@ xattr -d com.apple.quarantine charlie26-darwin-arm64
 
 ## NDI®
 
-L'audio del programma può arrivare da una sorgente NDI®: serve il programma NDI Tools/Runtime sul computer di regia (da [ndi.video](https://ndi.video); non è incluso).
+L'installer per Windows **include la libreria NDI®**, quindi l'audio del programma da sorgenti NDI funziona subito. Su Mac la libreria NDI non è inclusa.
 
 NDI® is a registered trademark of Vizrt NDI AB.
 
