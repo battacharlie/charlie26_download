@@ -1,6 +1,6 @@
 # A ogni aggiornamento dei file (li copia la compilazione del repository privato)
-# ripubblica tutto come release "latest": i link del README e del sito
-# puntano sempre all'ultima versione.
+# pubblica la release della versione (tag vX.Y.Z): i link del README e del sito
+# con "releases/latest" puntano sempre all'ultima.
 name: release
 on:
   push:
@@ -18,14 +18,18 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           ver=$(tr -d ' \r\n' < VERSION)
+          tag="v$ver"
           title="CHARLIE26 – Intercom Evoluto $ver"
-          gh release view latest >/dev/null 2>&1 || gh release create latest --latest --title "$title" --notes-file RELEASE_NOTES.md
-          gh release edit latest --title "$title" --notes-file RELEASE_NOTES.md
-          # Carica i file presenti; un file tolto dal repository viene ritirato anche dalla release.
+          # Una release per ogni versione (tag vX.Y.Z): il sito legge da lì la
+          # versione. L'ultima è quella che GitHub serve come "latest" nei link.
+          gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --latest --title "$title" --notes-file RELEASE_NOTES.md
+          gh release edit "$tag" --latest --title "$title" --notes-file RELEASE_NOTES.md
           for f in charlie26-windows-amd64.exe charlie26-darwin-arm64 charlie26-darwin-amd64 charlie26-android.apk SHA256SUMS.txt; do
             if [ -f "$f" ]; then
-              gh release upload latest "$f" --clobber
+              gh release upload "$tag" "$f" --clobber
             else
-              gh release delete-asset latest "$f" --yes 2>/dev/null || true
+              gh release delete-asset "$tag" "$f" --yes 2>/dev/null || true
             fi
           done
+          # La vecchia release chiamata "latest" (primo schema) non serve più.
+          gh release delete latest --cleanup-tag --yes 2>/dev/null || true
