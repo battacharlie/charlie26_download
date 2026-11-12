@@ -24,7 +24,7 @@ jobs:
           # versione. L'ultima è quella che GitHub serve come "latest" nei link.
           gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --latest --title "$title" --notes-file RELEASE_NOTES.md
           gh release edit "$tag" --latest --title "$title" --notes-file RELEASE_NOTES.md
-          for f in charlie26-windows-amd64.exe charlie26-darwin-arm64 charlie26-darwin-amd64 charlie26-android.apk SHA256SUMS.txt; do
+          for f in charlie26-setup.exe charlie26-darwin-arm64 charlie26-darwin-amd64 charlie26-android.apk SHA256SUMS.txt; do
             if [ -f "$f" ]; then
               gh release upload "$tag" "$f" --clobber
             else
