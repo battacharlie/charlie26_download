@@ -1,6 +1,7 @@
 ## Novità
 
 - **Installer per Windows** (`charlie26-setup.exe`): installa il programma con la libreria **NDI®** inclusa, così l'audio del programma da sorgenti NDI funziona subito. Configura da solo il firewall per la rete locale; si disinstalla da *App installate*.
+- **Video NDI®**: nella console di regia, scheda Video, puoi scegliere come sorgente video una sorgente NDI® della rete (oltre a webcam/scheda di acquisizione e WHIP). Solo Windows.
 - **Audio del programma**: il video della regia può avere un audio separato dalle voci (scheda del PC di regia, NDI® o audio di OBS via WHIP). La regia sceglie se sul telefono ci sono due barre del volume o il "voice over" (il programma si abbassa quando parla qualcuno, con tre interruttori: regia, caporeparto, altri utenti).
 - **Tally di vMix**: la cornice del telefono di chi inquadra diventa rossa in onda e verde in anteprima, con spessore regolabile (console → scheda Tally; serve il programma sul PC di regia nella stessa rete di vMix).
 - **Auricolari Bluetooth**: pulsante 🎧 nell'app dei tecnici, il tasto play/pausa dell'auricolare apre e chiude il microfono; finestra di prova con rapporto da copiare.
