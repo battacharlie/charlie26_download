@@ -1,0 +1,31 @@
+# A ogni aggiornamento dei file (li copia la compilazione del repository privato)
+# ripubblica tutto come release "latest": i link del README e del sito
+# puntano sempre all'ultima versione.
+name: release
+on:
+  push:
+    branches: [main]
+    paths: ['charlie26-*', 'VERSION', 'RELEASE_NOTES.md']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ver=$(tr -d ' \r\n' < VERSION)
+          title="CHARLIE26 – Intercom Evoluto $ver"
+          gh release view latest >/dev/null 2>&1 || gh release create latest --latest --title "$title" --notes-file RELEASE_NOTES.md
+          gh release edit latest --title "$title" --notes-file RELEASE_NOTES.md
+          # Carica i file presenti; un file tolto dal repository viene ritirato anche dalla release.
+          for f in charlie26-windows-amd64.exe charlie26-darwin-arm64 charlie26-darwin-amd64 charlie26-android.apk SHA256SUMS.txt; do
+            if [ -f "$f" ]; then
+              gh release upload latest "$f" --clobber
+            else
+              gh release delete-asset latest "$f" --yes 2>/dev/null || true
+            fi
+          done
