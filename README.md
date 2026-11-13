@@ -1,6 +1,6 @@
 # CHARLIE26 – Intercom Evoluto: download
 
-Qui si scarica l'ultima versione di **CHARLIE26**, l'intercom di produzione per eventi: un canale Produzione e canali di reparto, con i tecnici che si collegano dallo **smartphone** inquadrando un QR code, senza installare nulla. Funziona in rete locale, senza internet.
+Qui si scarica l'ultima versione di **CHARLIE26**, l'intercom di produzione per eventi: un canale Produzione e canali di reparto, con i tecnici che si collegano dallo **smartphone** inquadrando un QR code, senza installare nulla. Funziona in rete locale, senza internet. Ci sono anche le [brochure in 6 lingue](brochure/).
 
 | Per | File |
 | --- | --- |
@@ -11,6 +11,14 @@ Qui si scarica l'ultima versione di **CHARLIE26**, l'intercom di produzione per 
 | Verifica dei file | [SHA256SUMS.txt](https://github.com/battacharlie/charlie26_download/releases/latest/download/SHA256SUMS.txt) |
 
 Le novità di ogni versione sono nella [release](https://github.com/battacharlie/charlie26_download/releases/latest).
+
+## Versione gratuita e licenza
+
+Il programma si può provare gratis, senza registrazione: la versione gratuita funziona **2 ore a ogni avvio** (poi va chiusa e riaperta) e con **al massimo 5 telefoni** insieme. Tutte le funzioni sono sempre disponibili.
+
+La **licenza annuale** (50 € l'anno) toglie i limiti: si richiede dal modulo su [charlie26inter.com](https://www.charlie26inter.com/#licenza), si riceve fattura e file di licenza via email e si attiva incollandola nella scheda *Licenza* della console, senza riavviare. Non è legata a un computer. Alla scadenza si torna alla versione gratuita.
+
+L'edizione con accesso da remoto (server su internet) ha una licenza a parte, su appuntamento.
 
 ## Come si avvia
 
