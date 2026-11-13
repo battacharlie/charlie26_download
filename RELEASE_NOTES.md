@@ -1,5 +1,6 @@
 ## Novità
 
+- **App Android firmata**: da questa versione l'APK ha una firma stabile, quindi gli aggiornamenti si installano sopra la versione precedente. Se hai l'app di una versione precedente, disinstallala una volta sola prima di installare questa.
 - **Condizioni d'uso** (mostrate dall'installer) aggiornate con la versione gratuita e la licenza annuale.
 - **Installer per Windows** (`charlie26-setup.exe`): installa il programma con la libreria **NDI®** inclusa, così l'audio del programma da sorgenti NDI funziona subito. Configura da solo il firewall per la rete locale; si disinstalla da *App installate*.
 - **Video NDI®**: nella console di regia, scheda Video, puoi scegliere come sorgente video una sorgente NDI® della rete (oltre a webcam/scheda di acquisizione e WHIP). Solo Windows.
