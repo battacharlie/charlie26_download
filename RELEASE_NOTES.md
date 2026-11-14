@@ -1,10 +1,11 @@
 ## Novità
 
+- **Nuovi limiti della versione gratuita (2.2)**: 4 ore a ogni avvio (prima 2), al massimo 2 canali (Produzione compresa), 4 collegamenti insieme (la regia più 3 telefoni, prima 5 telefoni) e solo nella rete locale, senza accesso da internet. La licenza annuale (50 €/anno) toglie tutti i limiti. Se un evento salvato ha più canali del consentito, la regia deve eliminare quelli in più (o inserire la licenza) prima che i telefoni possano collegarsi.
 - **App Android firmata**: da questa versione l'APK ha una firma stabile, quindi gli aggiornamenti si installano sopra la versione precedente. Se hai l'app di una versione precedente, disinstallala una volta sola prima di installare questa.
 - **Condizioni d'uso** (mostrate dall'installer) aggiornate con la versione gratuita e la licenza annuale.
 - **Installer per Windows** (`charlie26-setup.exe`): installa il programma con la libreria **NDI®** inclusa, così l'audio del programma da sorgenti NDI funziona subito. Configura da solo il firewall per la rete locale; si disinstalla da *App installate*.
 - **Video NDI®**: nella console di regia, scheda Video, puoi scegliere come sorgente video una sorgente NDI® della rete (oltre a webcam/scheda di acquisizione e WHIP). Solo Windows.
-- **Licenza (2.1)**: la versione gratuita funziona 2 ore a ogni avvio e con al massimo 5 telefoni; la licenza annuale (50 €/anno, da charlie26inter.com) toglie i limiti e si inserisce dalla scheda *Licenza* della console.
+- **Licenza (2.1)**: la versione gratuita aveva 2 ore e 5 telefoni (dalla 2.2 vedi sopra); la licenza annuale (50 €/anno, da charlie26inter.com) toglie i limiti e si inserisce dalla scheda *Licenza* della console.
 - **Versione 2.0 – finestra di regia**: la console si apre in una finestra del programma, senza il browser (come un software a parte). Tally vMix: campo porta leggibile e collegamento di serie all'IP della scheda di rete in uso, con scelta della scheda.
 - **Audio del programma**: il video della regia può avere un audio separato dalle voci (scheda del PC di regia, NDI® o audio di OBS via WHIP). La regia sceglie se sul telefono ci sono due barre del volume o il "voice over" (il programma si abbassa quando parla qualcuno, con tre interruttori: regia, caporeparto, altri utenti).
 - **Tally di vMix**: la cornice del telefono di chi inquadra diventa rossa in onda e verde in anteprima, con spessore regolabile (console → scheda Tally; serve il programma sul PC di regia nella stessa rete di vMix).
