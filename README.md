@@ -14,9 +14,9 @@ Le novità di ogni versione sono nella [release](https://github.com/battacharlie
 
 ## Versione gratuita e licenza
 
-Il programma si può provare gratis, senza registrazione: la versione gratuita funziona **2 ore a ogni avvio** (poi va chiusa e riaperta) e con **al massimo 5 telefoni** insieme. Tutte le funzioni sono sempre disponibili.
+Il programma si può provare gratis, senza registrazione: la versione gratuita funziona **4 ore a ogni avvio** (poi va chiusa e riaperta), con **al massimo 2 canali** (Produzione compresa), **regia + 3 telefoni** insieme e **solo nella rete locale**, senza accesso da internet. Tutte le funzioni sono sempre disponibili.
 
-La **licenza annuale** (50 € l'anno) toglie i limiti: si richiede dal modulo su [charlie26inter.com](https://www.charlie26inter.com/#licenza), si riceve fattura e file di licenza via email e si attiva incollandola nella scheda *Licenza* della console, senza riavviare. Non è legata a un computer. Alla scadenza si torna alla versione gratuita.
+La **licenza annuale** (50 € l'anno) toglie i limiti (tempo, canali, telefoni): si richiede dal modulo su [charlie26inter.com](https://www.charlie26inter.com/#licenza), si riceve fattura e file di licenza via email e si attiva incollandola nella scheda *Licenza* della console, senza riavviare. Non è legata a un computer. Alla scadenza si torna alla versione gratuita.
 
 L'edizione con accesso da remoto (server su internet) ha una licenza a parte, su appuntamento.
 
